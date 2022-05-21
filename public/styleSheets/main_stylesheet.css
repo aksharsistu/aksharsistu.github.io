@@ -1,0 +1,245 @@
+* {
+    font-family: sans-serif;
+}
+
+body {
+    background: #decdb5;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: max(100%, 900px);
+    height: 100px;
+    background-image: linear-gradient(to bottom, #FF7701, rgba(211, 98, 36, 0.6));
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header img {
+    height: 100%;
+    opacity: 0.8;
+}
+
+header h1 {
+    color: darkblue;
+}
+
+header .header-buttons button {
+    background-image: linear-gradient(to top right, #533a72, white, #0ec0d0);
+    color: #462121;
+    font: 20px bolder;
+    border-radius: 3px;
+    margin: 0 4px 0 2px;
+    cursor: pointer;
+}
+
+header .header-buttons button:hover {
+    box-shadow: 2px 2px #462121;
+    background-image: linear-gradient(to bottom, #e8986e, rgba(211, 98, 36, 0.8));
+    transition-duration: 0.4s;
+}
+
+.top-navigator {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    top: 100px;
+    left: 0;
+    width: max(100%, 900px);
+    height: 50px;
+    background-image: linear-gradient(to bottom, #684990, #533a72);
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.52);
+    z-index: 1;
+}
+
+.top-navigator button {
+    height: 100%;
+    background-image: linear-gradient(to bottom, #684990, #533a72);
+    border: none;
+    font: 18px bolder;
+    font-family: Arial, serif;
+    color: white;
+    cursor: pointer;
+}
+
+.top-navigator button:hover {
+    background-image: linear-gradient(to bottom, #543b72, #473062);
+    color: red;
+}
+
+.top-navigator .search-bar {
+    display: inline-block;
+    width: 50%;
+    margin: 0 0 0 30%;
+}
+
+.top-navigator .search-bar button {
+    color: black;
+    height: 30px;
+    border-radius: 3px;
+    border: 1px solid black;
+    background-image: linear-gradient(to bottom, orange, orangered);
+}
+
+.top-navigator .search-bar button:hover {
+    background-image: linear-gradient(to bottom, orangered, orangered);
+    color: white;
+}
+
+.top-navigator .search-bar #categories {
+    height: 30px;
+    border-radius: 3px;
+}
+
+.top-navigator .search-bar #search {
+    width: 60%;
+    height: 25px;
+    border-radius: 3px;
+}
+
+main {
+    position: absolute;
+    left: 0;
+    display: flex;
+    width: max(100%, 900px);
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    top: 150px;
+    height: 590px;
+}
+
+main .menu {
+    position: absolute;
+    display: flex;
+    left: -210px;
+    flex-direction: column;
+    list-style-type: none;
+    height: 590px;
+    width: 200px;
+    transition: left 0.5s;
+    background: lightgrey;
+    padding: 0 2px 0 2px;
+    border-radius: 3px;
+    box-shadow: 5px 0 20px gray;
+    margin: 10px 0 0 0;
+    z-index: 1;
+}
+
+main .menu .menu-option {
+    display: flex;
+    padding: 5px;
+    border: none;
+    border-radius: 2px;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+main .menu .menu-option:hover {
+    background: linear-gradient(to right, #bbbaba, #a9a7a7, #bbbaba, #a9a7a7, #bbbaba);
+    cursor: pointer;
+}
+
+main .column-1 {
+    height: 98%;
+    width: 45%;
+    background: rgba(255, 255, 255, 0.64);
+    margin: 5px 0 0 0;
+}
+
+main .column-2 {
+    height: 98%;
+    width: 45%;
+    background: rgba(255, 255, 255, 0.64);
+    margin: 5px 0 0 0;
+}
+
+main .column-1 .banner img:nth-child(1) {
+    position: relative;
+    top: 0;
+    visibility: visible;
+    transition: all 0.5s;
+    width: 98%;
+    margin: 1% 1% 0 1%;
+}
+
+.row {
+    position: relative;
+    width: 100%;
+    height: 145px;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.row .products {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: white;
+    width: 32%;
+    height: 100%;
+    transition: 0.3s;
+}
+
+.row .products:hover {
+    background: #cb96cb;
+    cursor: pointer;
+}
+
+.row .products img {
+    height: 50%;
+}
+
+footer {
+    display: flex;
+    position: absolute;
+    left: 0;
+    bottom: -99px;
+    height: 100px;
+    width: 100%;
+    background: linear-gradient(to bottom, rgba(255, 165, 0, 0.9), rgba(255, 165, 0, 0.52));
+    justify-content: space-between;
+    align-items: center;
+    border-top: solid black;
+}
+
+footer .contact-us {
+    height: 100%;
+    width: 33%;
+    text-align: center;
+}
+
+footer .credits {
+    height: 100%;
+    width: 33%;
+    text-align: center;
+}
+
+footer .about-us {
+    height: 100%;
+    width: 33%;
+    text-align: center;
+}
+
+footer h3, p, ul, span {
+    margin: 0;
+    list-style-type: none;
+}
+
+footer h3 {
+    color: darkgreen;
+}
+
+footer ul, p, span {
+    color: darkblue;
+}
+
+

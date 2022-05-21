@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>E-Commerce</title>
+    <link href="images/favicon.png" rel="icon">
+    <link href="styleSheets/main_stylesheet.css" rel="stylesheet">
+    <script src="javaScript/main.js"></script>
+    <script src="javaScript/image_loop.js"></script>
+</head>
+<body>
+<header>
+    <img alt="logo" src="images/logo.png">
+    <h1>E-Commerce</h1>
+    <div class="header-buttons">
+        <button>Login</button>
+        <button>Cart</button>
+        <button>Orders</button>
+        <button>Wishlist</button>
+    </div>
+</header>
+<div class="top-navigator">
+    <button onclick="toggleMenu()">Menu</button>
+    <div class="search-bar">
+        <label>
+            <button>Search</button>
+            <select id="categories" name="categories" onchange="searchUpdate()">
+                <option value="">All</option>
+                <option value="Books">Books</option>
+                <option value="Clothes">Clothes</option>
+                <option value="Electronics">Electronics</option>
+                <option value="Lifestyle">Lifestyle</option>
+                <option value="Sports">Sports</option>
+            </select>
+            <input id="search" placeholder="Search" type="text">
+        </label>
+    </div>
+</div>
+<main>
+    <ul class="menu" id="Menu">
+        <li class="menu-option">menu-option-1</li>
+        <li class="menu-option">menu-option-2</li>
+        <li class="menu-option">menu-option-3</li>
+        <li class="menu-option">menu-option-4</li>
+        <li class="menu-option">menu-option-5</li>
+        <li class="menu-option">menu-option-6</li>
+        <li class="menu-option">menu-option-7</li>
+        <li class="menu-option">menu-option-8</li>
+        <li class="menu-option">menu-option-9</li>
+        <li class="menu-option">menu-option-10</li>
+        <li class="menu-option">menu-option-11</li>
+        <li class="menu-option">menu-option-12</li>
+    </ul>
+    <div class="column-1">
+        <div class="banner">
+            <img alt="banner-image" id="banner_image" onload="image_loop(this)" src="images/banner/1.png">
+        </div>
+        <div class="row">
+            <div class="products">
+                <img alt="product-1-img" src="images/best-sellers/product-1.png">
+                <span>Product 1</span><br>
+                <span>Price: Rs. 100</span>
+            </div>
+            <div class="products">
+                <img alt="product-2-img" src="images/best-sellers/product-2.png">
+                <span>Product 1</span><br>
+                <span>Price: Rs. 100</span>
+            </div>
+            <div class="products">
+                <img alt="product-3-img" src="images/best-sellers/product-3.png">
+                <span>Product 1</span><br>
+                <span>Price: Rs. 100</span>
+            </div>
+        </div>
+
+    </div>
+    <div class="column-2">
+        <div class="row">
+            <div class="products">
+                <img alt="product-3-img" src="images/best-sellers/product-3.png">
+                <span>Product 1</span><br>
+                <span>Price: Rs. 100</span>
+            </div>
+            <div class="products">
+                <img alt="product-3-img" src="images/best-sellers/product-3.png">
+                <span>Product 1</span><br>
+                <span>Price: Rs. 100</span>
+            </div>
+            <div class="products">
+                <img alt="product-3-img" src="images/best-sellers/product-3.png">
+                <span>Product 1</span><br>
+                <span>Price: Rs. 100</span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="products">
+                <img alt="product-3-img" src="images/best-sellers/product-3.png">
+                <span>Product 1</span><br>
+                <span>Price: Rs. 100</span>
+            </div>
+            <div class="products">
+                <img alt="product-3-img" src="images/best-sellers/product-3.png">
+                <span>Product 1</span><br>
+                <span>Price: Rs. 100</span>
+            </div>
+            <div class="products">
+                <img alt="product-3-img" src="images/best-sellers/product-3.png">
+                <span>Product 1</span><br>
+                <span>Price: Rs. 100</span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="products">
+                <img alt="product-3-img" src="images/best-sellers/product-3.png">
+                <span>Product 1</span><br>
+                <span>Price: Rs. 100</span>
+            </div>
+            <div class="products">
+                <img alt="product-3-img" src="images/best-sellers/product-3.png">
+                <span>Product 1</span><br>
+                <span>Price: Rs. 100</span>
+            </div>
+            <div class="products">
+                <img alt="product-3-img" src="images/best-sellers/product-3.png">
+                <span>Product 1</span><br>
+                <span>Price: Rs. 100</span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="products">
+                <img alt="product-3-img" src="images/best-sellers/product-3.png">
+                <span>Product 1</span><br>
+                <span>Price: Rs. 100</span>
+            </div>
+            <div class="products">
+                <img alt="product-3-img" src="images/best-sellers/product-3.png">
+                <span>Product 1</span><br>
+                <span>Price: Rs. 100</span>
+            </div>
+            <div class="products">
+                <img alt="product-3-img" src="images/best-sellers/product-3.png">
+                <span>Product 1</span><br>
+                <span>Price: Rs. 100</span>
+            </div>
+        </div>
+    </div>
+</main>
+<br>
+<footer>
+    <div class="contact-us">
+        <h3>Contact Us</h3>
+        <ul>
+            <li><b>E-Mail:</b> contactus@ecommerce.xyz</li>
+            <li><b>Address:</b> somewhere</li>
+            <li><b>Phone:</b> 000 1234 5678</li>
+        </ul>
+    </div>
+    <div class="credits">
+        <h3>Credits</h3><br>
+        <span>Made By Akshar.</span>
+    </div>
+    <div class="about-us">
+        <h3>About Us</h3>
+        <p>
+            We believe in providing the best service to our customers and have been working towards it relentlessly.
+            Please provide any feedback by contacting us through the contact us section.
+        </p>
+    </div>
+</footer>
+
+</body>
+</html>
